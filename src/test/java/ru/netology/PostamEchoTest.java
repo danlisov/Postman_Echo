@@ -19,7 +19,7 @@ public class PostamEchoTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("Postman Templates"))
+                .body("data", equalTo("Published Postman Templates"))
         ;
     }
 }
