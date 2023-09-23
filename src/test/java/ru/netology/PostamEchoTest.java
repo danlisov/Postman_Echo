@@ -12,14 +12,14 @@ public class PostamEchoTest {
 // Предусловия
         given()
                 .baseUri("https://postman-echo.com")
-                .body("Postman Echo") // отправляемые данные (заголовки и query можно выставлять аналогично)
+                .body("Published Postman Templates") // отправляемые данные (заголовки и query можно выставлять аналогично)
 // Выполняемые действия
                 .when()
                 .post("/post")
 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("Postman"))
+                .body("data", equalTo("Postman Templates"))
         ;
     }
 }
